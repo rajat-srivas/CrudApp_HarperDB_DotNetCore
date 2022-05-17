@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "407582f0-c550-40b7-8d2c-3ed9b7240421",
+		"name": "CRUD: HarperDB & DotNet Core",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Schema",
+			"item": [
+				{
+					"name": "Add New Schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Schema?schema=Mozabs",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Schema"
+							],
+							"query": [
+								{
+									"key": "schema",
+									"value": "Mozabs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Schema/table?table=comments&schema=Mozabs",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Schema",
+								"table"
+							],
+							"query": [
+								{
+									"key": "table",
+									"value": "comments"
+								},
+								{
+									"key": "schema",
+									"value": "Mozabs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Schema",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Schema?schema=core-demo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Schema"
+							],
+							"query": [
+								{
+									"key": "schema",
+									"value": "core-demo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Table",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Schema/table?table=One&schema=core-demo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Schema",
+								"table"
+							],
+							"query": [
+								{
+									"key": "table",
+									"value": "One"
+								},
+								{
+									"key": "schema",
+									"value": "core-demo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Attribute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Schema/table/attribute?schema=core-demo&table=One&attribute=Hello",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Schema",
+								"table",
+								"attribute"
+							],
+							"query": [
+								{
+									"key": "schema",
+									"value": "core-demo"
+								},
+								{
+									"key": "table",
+									"value": "One"
+								},
+								{
+									"key": "attribute",
+									"value": "Hello"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Attribute",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Schema/table/attribute?table=One&schema=core-demo&attribute=Hello",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Schema",
+								"table",
+								"attribute"
+							],
+							"query": [
+								{
+									"key": "table",
+									"value": "One"
+								},
+								{
+									"key": "schema",
+									"value": "core-demo"
+								},
+								{
+									"key": "attribute",
+									"value": "Hello"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Add New Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"content\": \"Is this a new post\",\r\n  \"postedBy\": \"randomUser101\",\r\n  \"imageURL\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/Posts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Posts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Posts/a612bf0a-ef85-423d-8020-55ec4bbc7b31",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Posts",
+								"a612bf0a-ef85-423d-8020-55ec4bbc7b31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"content\": \"Is this a updated post\",\r\n    \"postedBy\": \"randomUser101\",\r\n    \"imageURL\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/Posts/a612bf0a-ef85-423d-8020-55ec4bbc7b31",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Posts",
+								"a612bf0a-ef85-423d-8020-55ec4bbc7b31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Posts/a612bf0a-ef85-423d-8020-55ec4bbc7b31",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Posts",
+								"a612bf0a-ef85-423d-8020-55ec4bbc7b31"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Get Comment by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Comments/ea17a9ca-03f5-42aa-a53f-c115281c2fab",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments",
+								"ea17a9ca-03f5-42aa-a53f-c115281c2fab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comment by PostID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Comments/post/a612bf0a-ef85-423d-8020-55ec4bbc7b31",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments",
+								"post",
+								"a612bf0a-ef85-423d-8020-55ec4bbc7b31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Comment to Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"comment\": \"Awesome Comment\",\r\n  \"postedBy\": \"randomUser1\",\r\n  \"postId\": \"a612bf0a-ef85-423d-8020-55ec4bbc7b31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/Comments",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reply to existing comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"comment\": \"Great Work\",\r\n  \"postedBy\": \"randomUser1\",\r\n  \"parentCommentId\": \"ea17a9ca-03f5-42aa-a53f-c115281c2fab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/Comments",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"comment\": \"Great Work Again !!!!!!!!\",\r\n            \r\n            \"postedBy\": \"randomUser123\",\r\n            \"postId\": null,\r\n            \"parentCommentId\": \"ea17a9ca-03f5-42aa-a53f-c115281c2fab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/Comments/7c83e79c-39be-4d68-94bb-dc40d857235a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments",
+								"7c83e79c-39be-4d68-94bb-dc40d857235a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Comments/6a3b5852-5306-4f0a-bd1f-f75bacd22aaa",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments",
+								"6a3b5852-5306-4f0a-bd1f-f75bacd22aaa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment by PostID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/Comments/post/a612bf0a-ef85-423d-8020-55ec4bbc7b31",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"Comments",
+								"post",
+								"a612bf0a-ef85-423d-8020-55ec4bbc7b31"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

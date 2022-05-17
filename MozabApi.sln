@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozab.SharedUtilities", "Mozab.SharedUtilities\Mozab.SharedUtilities.csproj", "{0FDE5E48-297B-4003-899C-2B24FC2E8872}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mozab.Service", "Mozab.Service\Mozab.Service.csproj", "{87982325-0D90-491C-9048-12C548A56D04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FDE5E48-297B-4003-899C-2B24FC2E8872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDE5E48-297B-4003-899C-2B24FC2E8872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDE5E48-297B-4003-899C-2B24FC2E8872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDE5E48-297B-4003-899C-2B24FC2E8872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87982325-0D90-491C-9048-12C548A56D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87982325-0D90-491C-9048-12C548A56D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87982325-0D90-491C-9048-12C548A56D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87982325-0D90-491C-9048-12C548A56D04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0CA95F5-F32A-4D8C-946B-5CAB2F6F6BE1}
+	EndGlobalSection
+EndGlobal

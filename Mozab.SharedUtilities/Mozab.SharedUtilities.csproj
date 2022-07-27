@@ -4,8 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="HarperDb_Net_Client" Version="2.0.0" />
-  </ItemGroup>
-
 </Project>

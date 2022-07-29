@@ -32,7 +32,7 @@ namespace Mozab.Service.Comments
 
 			services.AddControllers();
 			
-			services.AddSingleton<IHarperConfiguration, HaperConfigurations>();
+			services.AddSingleton<IHarperConfiguration, HarperConfigurations>();
 			services.AddSingleton<ICommentsService, CommentsService>();
 			services.AddSingleton<ISchemaService, SchemaService>();
 			services.AddSingleton<IPostService, PostService>();

@@ -3,10 +3,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace Mozab.Service.Comments.Services
 {
-	public class HaperConfigurations : IHarperConfiguration
+	public class HarperConfigurations : IHarperConfiguration
 	{
 		private IConfiguration _config;
-		public HaperConfigurations(IConfiguration configs)
+		public HarperConfigurations(IConfiguration configs)
 		{
 			_config = configs;
 		}
